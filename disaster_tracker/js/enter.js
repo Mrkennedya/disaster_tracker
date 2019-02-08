@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("#response").hide();
 
-  $("#listingForm").on("submit", function(e) {
+  $("#incident_form").on("submit", function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -10,7 +10,7 @@ $(document).ready(function() {
       type: "POST",
       data: $(this).serialize(),
       success: function(response) {
-        $("#listing").hide();
+        $("#incidents").hide();
         $("#response").show();
       },
       error: function(xhr, status, err) {

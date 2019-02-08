@@ -1,7 +1,6 @@
 #container {
   max-width: 900px;
   margin: 25px auto;
-  background: #dedede;
   padding: 2em;
 }
 
@@ -10,8 +9,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  border: 1px solid #242222;
-  background: #fcfcfc;
+  background: #;
   margin: 15px auto;
 }
 
@@ -48,7 +46,7 @@ th {
 /* striping every other row */
 
 tr:nth-child(2n-1) td {
-  background: #f2f2f2;
+  background: #cfcfcf;
 }
 
 
@@ -70,8 +68,8 @@ td, th {
 
 @media screen and ( max-width: 850px) {
   #container {
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 95%;
+    min-width: 85%;
     margin: auto;
     padding: 1em 0;
   }

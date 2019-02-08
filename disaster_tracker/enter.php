@@ -2,21 +2,21 @@
 
 <?php
 // This is the "prepared statement" version of this file.
-if (isset($_POST['name']) && isset($_POST['style'])) {
+if (isset($_POST['name'])) {
     // sanitizeMySQL() is a custom function, written below
     $name = sanitizeMySQL($conn, $_POST['name']);
     $city = sanitizeMySQL($conn, $_POST['city']);
     $state = sanitizeMySQL($conn, $_POST['state']);
     $disaster = sanitizeMySQL($conn, $_POST['disaster']);
-    $description = sanitizeMySQL($conn, $_POST['description']);
+    $description = sanitizeMySQL($conn, $_POST['price']);
     $link = sanitizeMySQL($conn, $_POST['link']);
     // create a PHP timestamp
     date_default_timezone_set('America/New_York');
     $date = date('m-d-Y', time());
     // the prepared statement - note: 6 question marks represent
     // 6 variables we will send to database separately
-    $query = "INSERT INTO listings (name, city, state, disaster, description, link, updated)
-    VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $query = "INSERT INTO incidents (name, city, state, disaster, description, link)
+    VALUES (?, ?, ?, ?, ?, ?)";
     // prepare the statement in db
     if ( $stmt = mysqli_prepare($conn, $query) ) {
         // bind the values to replace the 6 question marks

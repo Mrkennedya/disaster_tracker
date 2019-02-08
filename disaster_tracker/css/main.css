@@ -1,27 +1,69 @@
 html {
     font-size: 100%; /* keep */
     box-sizing: border-box; /* keep */
+
 }
 
 * {
     box-sizing: inherit; /* keep */
-    -webkit-overflow-scrolling: touch;
 }
 
 body {
   margin: auto;
-  background: #ff2000;
+  background-color: #242222;
   color: #000;
-  font-family: futura, sans-serif;
+  font-family: 'futura', sans-serif;
   font-size: 100%;
   line-height: 1.15em;
 }
 
+#intro {
+  max-width: 900px;
+  background: #B2FFFF;
+  width: 85%;
+  margin: 30px auto;
+  padding: 15px;
+  font-family: futura, sans-serif;
+}
+
+#buttons {
+  text-align: center;
+  padding: 10px;
+}
+
+#response {
+  text-align: center;
+  padding: 10px;
+}
+
 #container {
-  max-width: 700px;
-  margin: 20px auto;
-  background: #ededed;
-  padding: 2em;
+  max-width: 900px;
+  background: #B2FFFF;
+  width: 85%;
+  margin: 30px auto;
+  padding: 15px;
+  font-family: futura, sans-serif;
+}
+
+#container #center {
+  text-align: center;
+}
+
+#form {
+  m
+}
+
+#incidents {
+  margin: auto;
+  background-color: #B2FFFF;
+  color: #000;
+  font-family: 'futura', sans-serif;
+  font-size: 100%;
+  line-height: 1.15em;
+}
+
+#submit {
+  text-align: center;
 }
 
 #container p {
@@ -36,25 +78,14 @@ h1 {
   font-size: 2rem;
 }
 
-#intro {
-  width: 85%;
-  margin: auto;
-}
+
 
 label {
   display: block;
   padding-top: 0.5em;
 }
 
-select {
-  background: #fff;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  height: 2em;
-  padding: 0.1em;
-  /* too much padding and the options won't show in IE */
-  width: 100%;
-}
+
 
 input {
   width: 100%;
@@ -63,13 +94,9 @@ input {
   padding: 5px;
 }
 
-.centerText {
-  text-align: center;
-}
 
-/*.middle {
-  text-align: center;
-}
+
+
 
 .announce {
   background: #f2f2f2;
@@ -83,12 +110,9 @@ input {
 
 /* links */
 
-a {
-  color: #7d4676;
-}
 
 a:hover {
-  color: #a85e9e;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
@@ -109,34 +133,14 @@ a:hover {
 }
 
 
-/* submit button styling insanity
+ submit button styling insanity
    http://cssdemos.tupence.co.uk/button-styling.htm
    */
 
-input[type='submit'] {
-  cursor: pointer;
-  width: auto;
-  padding: 5px 25px;
-  background: #8c0672;
-  border: 1px solid #33842a;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .75);
-  color: #f3f3f3;
-  font-family: Calibri, sans-serif;
-  font-size: 1.2em;
-  margin-top: 1em;
-}
 
-input[type='submit']:hover, input[type='submit']:focus {
-  background: #690454;
-  box-shadow: 0 0 1px rgba(0, 0, 0, .75);
-  outline: none;
-}
 
-.smallform input[type='submit'] {
-  display: block;
-  margin: auto;
-}
+
+
 
 
 /* media queries */

@@ -1,9 +1,9 @@
 <?php
 
 $server   = "localhost";
-$database = "craftedb_listings";
-$username = "";
-$password = "";
+$database = "craftedb_disaster_tracker";
+$username = "craftedb_apollo";
+$password = "A[{heT@sS5<";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 
